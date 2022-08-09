@@ -69,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                     case  R.id.about:
                         fragment = new AboutFragment();
                         break;
+                    case  R.id.logout:
+                        fragment = new LogoutFragment();
+                        break;
                 }
 
                 if (fragment != null){

@@ -1,6 +1,7 @@
 package studio.angzai.uasakbif_310119123;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -22,7 +23,7 @@ public class SliderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slider);
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         viewPager = findViewById(R.id.pager);
         btnNext = findViewById(R.id.nextBtn);
 
@@ -41,7 +42,7 @@ public class SliderActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(viewPager.getCurrentItem()+1);
                 }else{
                     //kembali ke main activity
-                    startActivity(new Intent(SliderActivity.this, RegisterActivity.class));
+                    startActivity(new Intent(SliderActivity.this, LoginActivity.class));
                     finish();
                 }
             }
