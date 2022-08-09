@@ -1,5 +1,9 @@
 package studio.angzai.uasakbif_310119123;
 
+//Nama : ANGGA CAHYA ABADI
+//NIM : 10119123
+//Kelas : IF-3
+
 import android.content.Intent;
 import android.os.Bundle;
 
